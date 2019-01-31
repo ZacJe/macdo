@@ -44,7 +44,7 @@ Lancer l'installeur et suivez les étapes d'installation.
 
 ## Installation et démarrage du projet
 
-Téléchargez le zip du projet, dézippez-le et mettez le projet à la racine du disque local C:\ de votre PC. Son chemin doit maintenant être C:\macdo. 
+Téléchargez le zip du projet, dézippez-le et mettez le projet à la racine du disque local C:\ de votre PC. Enfin, renommez-le "macdo". Son chemin doit maintenant être C:\macdo. 
 
 Dirigez-vous à l'aide de l'invit de commande dans ce dossier :
 
@@ -85,10 +85,10 @@ Afin de tester l'API, vous pouvez utiliser POSTMAN en testant chacune des routes
 **La route suivante permet de renvoyer les sandwichs correspondant à une période.**
 
 ```
-GET | localhost:3000/sandwichs?period=summer
+GET | localhost:3000/sandwichs?period=Summer
 ```
 
-period peut prendre les valeurs "summer", "winter", "spring" ou "fall". 
+period peut prendre les valeurs "Summer", "Winter", "Spring" ou "Fall". N'oubliez pas de mettre une majuscule à la première lettre.
 
 
 
@@ -105,7 +105,7 @@ body example :
 	"id" : "Big Mac",
 	"link" : "https://image.bigmac.com",
 	"constitution" : ["salade","tomate","ognion"],
-	"period" : "winter"
+	"period" : "Winter"
 }
 ```
 
@@ -133,7 +133,7 @@ body example :
 **La route suivante permet de mettre à jour une période. Une période contient la liste des ID des sandwichs. Autrement dit, cette route permet de supprimer un sandwich pour une période.**
 
 ```
-PUT | localhost:3000/period/summer
+PUT | localhost:3000/period/Summer
 ```
 
 body example :
