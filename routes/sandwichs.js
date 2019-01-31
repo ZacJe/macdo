@@ -14,7 +14,7 @@ function toMaj(p) {
 
 router.get('/', async(req,res) => {
     try {
-        const period = await Period.findOne({ id : req.query.id }, 'sandwichs');
+        const period = await Period.findOne({ id : req.query.period }, 'sandwichs');
         let sandwichsList = [];
         for (let i=0; i<period.sandwichs.length; i++) {
             sandwichsList.push(await Sandwichs.find({ id : period.sandwichs[i] }));
